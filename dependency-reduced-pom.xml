@@ -4,7 +4,7 @@
   <groupId>com.dyescape</groupId>
   <artifactId>CommandDeleter</artifactId>
   <name>CommandDeleter</name>
-  <version>1.0.0</version>
+  <version>1.0.0-INDEV</version>
   <description>Simple plugin which blocks (deletes) specified commands.</description>
   <url>www.dyescape.com</url>
   <build>
