@@ -22,7 +22,6 @@ public final class CommandDeleter extends JavaPlugin {
     @Override
     public void onEnable() {
         // Fetch dependencies
-
         CommandDeleterModule module = new CommandDeleterModule(this);
         Injector injector = module.createInjector();
         injector.injectMembers(this);
