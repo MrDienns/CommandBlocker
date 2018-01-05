@@ -1,5 +1,5 @@
 main: com.dyescape.commanddeleter.CommandDeleter
-name: CommandBlocker
+name: CommandDeleter
 version: ${project.version}
 website: ${project.url}
 description: ${project.description}
