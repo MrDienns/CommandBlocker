@@ -1,0 +1,9 @@
+main: com.dyescape.commanddeleter.CommandDeleter
+name: CommandBlocker
+version: ${project.version}
+website: ${project.url}
+description: ${project.description}
+author: MrDienns
+commands:
+  commanddeleter:
+    description: Base plugin command
