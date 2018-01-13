@@ -4,9 +4,17 @@ import org.bukkit.command.Command;
 
 public class CommandUnregisterResult {
 
+    // -------------------------------------------- //
+    // FIELDS
+    // -------------------------------------------- //
+
     private final int aliasesDeleted;
     private final Command deletedCommand;
     private boolean success;
+
+    // -------------------------------------------- //
+    // CONSTRUCT
+    // -------------------------------------------- //
 
     public CommandUnregisterResult(boolean success) {
         this(0, null, success);
@@ -21,6 +29,10 @@ public class CommandUnregisterResult {
         this.deletedCommand = deletedCommand;
         this.success = success;
     }
+
+    // -------------------------------------------- //
+    // FIELD ACCESS
+    // -------------------------------------------- //
 
     public boolean succeeded() {
         return this.success;

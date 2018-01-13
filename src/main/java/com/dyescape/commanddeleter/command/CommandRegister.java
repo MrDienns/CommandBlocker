@@ -54,6 +54,12 @@ public class CommandRegister {
         return new CommandUnregisterResult(aliases, command, result);
     }
 
+    public Command getCommandFromAlias(String alias) throws CommandFetchException, UnknownCommandException {
+        Command command = this.getKnownCommands().get(alias);
+        if (command ==  null) throw new UnknownCommandException();
+        return command;
+    }
+
     // -------------------------------------------- //
     // PRIVATE
     // -------------------------------------------- //
@@ -93,12 +99,6 @@ public class CommandRegister {
 
     private Field getServerField(String name, Class<?> clazz) throws NoSuchFieldException {
         return clazz.getDeclaredField(name);
-    }
-
-    private Command getCommandFromAlias(String alias) throws CommandFetchException, UnknownCommandException {
-        Command command = this.getKnownCommands().get(alias);
-        if (command ==  null) throw new UnknownCommandException();
-        return command;
     }
 
 }

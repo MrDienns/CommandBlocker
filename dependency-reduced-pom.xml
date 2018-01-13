@@ -37,11 +37,6 @@
               <goal>shade</goal>
             </goals>
             <configuration>
-              <transformers>
-                <transformer>
-                  <mainClass>com.dyescape.commanddeleter.CommandDeleter</mainClass>
-                </transformer>
-              </transformers>
               <filters>
                 <filter>
                   <artifact>*:*</artifact>
