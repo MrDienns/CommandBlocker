@@ -2,6 +2,7 @@ package com.dyescape.commanddeleter.command.commands;
 
 import co.aikar.commands.annotation.CommandAlias;
 import co.aikar.commands.annotation.CommandCompletion;
+import co.aikar.commands.annotation.CommandPermission;
 import co.aikar.commands.annotation.Subcommand;
 import com.dyescape.commanddeleter.command.CommandRegister;
 import com.dyescape.commanddeleter.command.CommandUnregisterResult;
@@ -31,6 +32,7 @@ public class UnregisterCommand extends PluginCommand {
     @CommandCompletion("unregister")
     @Subcommand("unregister|u")
     @CommandAlias("unregister|u")
+    @CommandPermission("commanddeleter.unregister")
     public void onUnregisterCommand(CommandSender sender, UnregisterableCommand command) {
         try {
             CommandUnregisterResult result = this.commandRegister.unregisterCommand(command.getCommand());
