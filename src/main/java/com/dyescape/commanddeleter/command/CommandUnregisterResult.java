@@ -20,10 +20,6 @@ public class CommandUnregisterResult {
         this(0, null, success);
     }
 
-    public CommandUnregisterResult(Command deletedCommand, boolean success) {
-        this(0, deletedCommand, success);
-    }
-
     public CommandUnregisterResult(int aliasesDeleted, Command deletedCommand, boolean success) {
         this.aliasesDeleted = aliasesDeleted;
         this.deletedCommand = deletedCommand;
