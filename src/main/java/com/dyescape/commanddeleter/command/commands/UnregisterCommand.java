@@ -29,9 +29,7 @@ public class UnregisterCommand extends PluginCommand {
     // EXECUTION
     // -------------------------------------------- //
 
-    @CommandCompletion("unregister")
     @Subcommand("unregister|u")
-    @CommandAlias("unregister|u")
     @CommandPermission("commanddeleter.unregister")
     public void onUnregisterCommand(CommandSender sender, UnregisterableCommand command) {
         try {

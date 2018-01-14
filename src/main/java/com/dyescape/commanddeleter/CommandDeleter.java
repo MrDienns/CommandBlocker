@@ -45,6 +45,8 @@ public final class CommandDeleter extends JavaPlugin {
         commandManager.getCommandContexts().registerContext(UnregisterableCommand.class,
                 this.unregisterableCommandContextResolver);
 
+        commandManager.enableUnstableAPI("help");
+
         // ... Registration
         commandManager.registerCommand(this.mainCommand);
         commandManager.registerCommand(this.versionCommand);

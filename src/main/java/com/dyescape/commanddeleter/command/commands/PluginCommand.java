@@ -1,7 +1,9 @@
 package com.dyescape.commanddeleter.command.commands;
 
 import co.aikar.commands.BaseCommand;
+import co.aikar.commands.CommandHelp;
 import co.aikar.commands.annotation.CommandAlias;
+import co.aikar.commands.annotation.HelpCommand;
 import com.dyescape.commanddeleter.CommandDeleter;
 import com.dyescape.commanddeleter.util.TextUtil;
 import com.google.inject.Inject;
@@ -24,8 +26,9 @@ public class PluginCommand extends BaseCommand {
     // -------------------------------------------- //
 
     @CommandAlias("%base")
-    public void onCommand(CommandSender sender) {
-        sender.sendMessage("onCommand");
+    @HelpCommand
+    public void onCommand(CommandSender sender, CommandHelp help) {
+        help.showHelp();
     }
 
     // -------------------------------------------- //

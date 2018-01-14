@@ -14,9 +14,7 @@ public class VersionCommand extends PluginCommand {
     // EXECUTION
     // -------------------------------------------- //
 
-    @CommandCompletion("version")
     @Subcommand("version|v")
-    @CommandAlias("version|v")
     public void onVersionCommand(CommandSender sender) {
         this.sendEmptyLine(sender);
         this.sendLine(sender, String.format("<rose>CommandDeleter <silver>by <yellow>%s", this.parseAuthors()));
