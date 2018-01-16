@@ -10,7 +10,7 @@ public class CommandUnregisterResult {
 
     private final int aliasesDeleted;
     private final Command deletedCommand;
-    private boolean success;
+    private final boolean success;
 
     // -------------------------------------------- //
     // CONSTRUCT
